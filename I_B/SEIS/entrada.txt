@@ -1,0 +1,6 @@
+Hola MUNDO 123
+Compiladores y Lenguajes 2026
+ABC xyz 007
+edad = 25;
+Correo: alumno@epn.edu.ec
+Simbolos: ! # $ % & * + -
