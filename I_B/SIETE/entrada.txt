@@ -1,0 +1,4 @@
+int edad 25
+if else while
+contador2 _total 100
+while2
