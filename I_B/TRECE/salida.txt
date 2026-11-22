@@ -1,0 +1,12 @@
+Valida: 0x1A3F -> Decimal: 6719
+Valida: 0xff -> Decimal: 255
+Valida: 0X10 -> Decimal: 16
+Valida: 0x0 -> Decimal: 0
+Valida: 0xABCDEF -> Decimal: 11259375
+Invalida: 1A3F
+Invalida: 0x
+Invalida: 0x1G
+Invalida: abc
+Invalida: 123
+Invalida: x1A
+Invalida: 0x12.5
