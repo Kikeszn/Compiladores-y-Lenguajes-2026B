@@ -14,7 +14,7 @@ Facultad de Ingeniería de Sistemas
 
 ## Descripción
 
-Este proyecto reúne tres analizadores léxicos desarrollados con **Lex/Flex y C**. Los ejercicios permiten clasificar caracteres, reconocer tokens e identificar operadores mediante expresiones regulares.
+Este proyecto reúne 14 analizadores léxicos desarrollados con **Lex/Flex y C**. Los ejercicios permiten clasificar caracteres, reconocer tokens e identificar operadores mediante expresiones regulares.
 
 ## Ejercicios
 
