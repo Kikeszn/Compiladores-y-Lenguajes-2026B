@@ -1,0 +1,5 @@
+CORREO VALIDO: ambar.salazar@epn.edu.ec
+CORREO VALIDO: ambarsalazar2804@gmail.com
+TOKEN NO VALIDO: correo_sin_dominio@
+TOKEN NO VALIDO: @sinusuario.com
+TOKEN NO VALIDO: texto_normal
