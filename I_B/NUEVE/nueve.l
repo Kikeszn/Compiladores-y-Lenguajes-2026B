@@ -1,0 +1,14 @@
+%{
+#include <stdlib.h>
+#include <stdio.h>
+%}
+
+%%
+[A-Z]   putchar(yytext[0] + 32);
+.|\n    putchar(yytext[0]);
+%%
+
+int main() {
+    yylex();
+    return 0;
+}
