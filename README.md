@@ -8,153 +8,100 @@ Facultad de Ingeniería de Sistemas
 
 ## Integrantes
 
-- Enrique Betancourt
-- Alejandro Navarrete
-- Ambar Salazar
+- Betancourt Enrique 
+- Navarrete Alejandro
+- Salazar Ambar
 
 ## Descripción
 
-Este proyecto reúne 14 analizadores léxicos desarrollados con **Lex/Flex y C**. Los ejercicios permiten clasificar caracteres, reconocer tokens e identificar operadores mediante expresiones regulares.
+Colección de **14 ejercicios de análisis léxico** desarrollados con Lex/Flex y C, correspondientes a las prácticas de la Semana 4 y los nueve ejercicios propuestos en la Semana 6.
+
+El trabajo comienza con la estructura básica de un programa Lex y avanza hacia el reconocimiento de tokens, la transformación de texto y la conversión de representaciones numéricas. Cada ejercicio combina expresiones regulares con acciones en C para resolver una tarea específica.
+
+## Objetivo general
+
+Aplicar los fundamentos del análisis léxico mediante la construcción de analizadores capaces de reconocer patrones, clasificar lexemas y ejecutar acciones asociadas a cada coincidencia.
 
 ## Ejercicios
 
-| N.º | Analizador | Funcionalidad |
-|:---:|------------|---------------|
-| 06 | Conteo de caracteres | Cuenta mayúsculas, minúsculas, dígitos y espacios en blanco. |
-| 07 | Reconocimiento de tokens | Identifica palabras reservadas, identificadores y números enteros. |
-| 08 | Reconocimiento de operadores | Clasifica operadores aritméticos y relacionales. |
+### Ejercicios propuestos de Lex/Flex - Semana 4
 
-### Ejercicio 06 · Conteo de caracteres
+| N.º | Archivo | Descripción del problema |
+|:---:|---------|-------------------------|
+| 01 | `uno.l` | Implementar un programa mínimo con `%%` para observar el comportamiento de eco predeterminado de Lex/Flex. |
+| 02 | `dos.l` | Reconocer las palabras `pare` e `inicio` y ejecutar las acciones correspondientes para simular órdenes. |
+| 03 | `tres.l` | Contabilizar los saltos de línea y los caracteres procesados mediante reglas y contadores. |
+| 04 | `cuatro.l` | Construir un reconocedor básico de números e identificadores mediante expresiones regulares. |
+| 05 | `cinco.l` | Incorporar el reconocimiento de números reales con notación exponencial, considerando signo, parte decimal y exponente. |
 
-Clasifica cada carácter de entrada y acumula los totales correspondientes.
+### Ejercicios propuestos de Lex/Flex — Semana 6
 
-- **Mayúsculas:** `A–Z`.
-- **Minúsculas:** `a–z`.
-- **Dígitos:** `0–9`.
-- **Espacios en blanco:** espacios, tabulaciones y saltos de línea, entre otros.
-
-Los demás caracteres se ignoran.
-
-### Ejercicio 07 · Reconocimiento de tokens
-
-Imprime el **tipo de token** y su **lexema**.
-
-- **Palabras reservadas:** `if`, `else`, `while`, `int`.
-- **Identificadores:** comienzan con una letra o guion bajo y pueden continuar con letras, dígitos o guiones bajos.
-- **Enteros:** secuencias de uno o más dígitos, sin signo.
-
-Los caracteres que no corresponden a estas categorías se reportan como `NO_RECONOCIDO`.
-
-### Ejercicio 08 · Reconocimiento de operadores
-
-Imprime la categoría, el nombre y el símbolo del operador encontrado.
-
-| Categoría | Operadores |
-|-----------|------------|
-| Aritméticos | `+` · `-` · `*` · `/` |
-| Relacionales | `<` · `<=` · `>` · `>=` · `==` · `!=` |
-
-Los espacios y otros caracteres se ignoran.
-
----
+| N.º | Archivo | Descripción del problema |
+|:---:|---------|-------------------------|
+| 06 | `seis.l` | Contar letras mayúsculas, minúsculas, dígitos y espacios en blanco, relacionando esta clasificación con la formación de tokens. |
+| 07 | `siete.l` | Reconocer identificadores, las palabras reservadas `if`, `else`, `while` e `int`, y números enteros. Mostrar el tipo de token y su lexema. |
+| 08 | `ocho.l` | Identificar operadores aritméticos y relacionales, e imprimir el tipo de operador reconocido. |
+| 09 | `nueve.l` | Convertir las letras mayúsculas a minúsculas y conservar los demás caracteres, aplicando normalización léxica. |
+| 10 | `diez.l` | Contar las apariciones de cada dígito del `0` al `9` y presentar una tabla de frecuencias. |
+| 11 | `once.l` | Detectar patrones simples de direcciones de correo electrónico y reconocerlos como tokens válidos. |
+| 12 | `doce.l` | Reconocer números binarios y convertirlos a su valor decimal. |
+| 13 | `trece.l` | Reconocer números hexadecimales con prefijo `0x` y convertirlos a su valor decimal. |
+| 14 | `catorce.l` | Procesar listas de identificadores o números enteros separados por comas y reportar otros tipos de token como errores. |
 
 ## Herramientas
 
-| Herramienta | Uso |
-|-------------|-----|
-| Lex/Flex | Generación del analizador a partir de patrones y acciones. |
-| C | Implementación de las acciones y presentación de resultados. |
-| GCC | Compilación del código generado. |
-| Ubuntu | Entorno de compilación y ejecución. |
+| Herramienta | Función |
+|-------------|---------|
+| **Lex/Flex** | Generar analizadores léxicos a partir de expresiones regulares y acciones. |
+| **C** | Implementar contadores, conversiones, funciones auxiliares y presentación de resultados. |
+| **GCC** | Compilar el código C generado y enlazar la biblioteca de Flex. |
+| **Ubuntu GNU/Linux** | Proporcionar el entorno de desarrollo, compilación y ejecución. |
+| **Terminal** | Ejecutar los comandos necesarios para generar y comprobar los analizadores. |
 
-## Archivos
+## Estructura de los programas
 
-| Archivo | Descripción |
-|---------|-------------|
-| `seis.l` | Código fuente del ejercicio 06. |
-| `reconocedor.l` | Código fuente del ejercicio 07. |
-| `ocho.l` | Código fuente del ejercicio 08. |
-| `lex.yy.c` | Código C generado automáticamente por Flex. |
-| `a.out` | Ejecutable generado por GCC. |
-| `entrada.txt` | Texto utilizado para las pruebas. |
-| `salida.txt` | Resultados guardados durante la ejecución. |
+Los archivos `.l` se organizan en tres secciones separadas mediante `%%`:
 
-> Cada ejecución de Flex genera `lex.yy.c`. Al compilar con los comandos siguientes, `a.out` corresponde al último ejercicio compilado.
+1. **Definiciones:** opciones de configuración, bibliotecas, variables y patrones reutilizables.
+2. **Reglas:** expresiones regulares acompañadas de acciones en C.
+3. **Código auxiliar:** funciones que complementan el analizador, como `main()` y procedimientos de apoyo.
 
-## Compilación
+Según el ejercicio, algunas secciones pueden quedar vacías.
 
-Ejecutar los comandos del ejercicio que se desea probar.
+## Características importantes.
 
-### Ejercicio 06
+| Elemento | Función |
+|----------|---------|
+| `yytext` | Contiene el lexema reconocido en la coincidencia actual. |
+| `yyleng` | Indica la longitud del lexema reconocido. |
+| `yylex()` | Ejecuta el analizador generado por Flex. |
+| `yyin` | Permite indicar el archivo desde el que se realiza la lectura. |
 
-    flex seis.l
+## Generación y compilación
+
+Para un archivo denominado `programa.l`:
+
+    flex programa.l
     gcc lex.yy.c -lfl
 
-### Ejercicio 07
+Flex genera el archivo `lex.yy.c`, que contiene la implementación del analizador en C. GCC compila ese archivo y produce el ejecutable `a.out`. La opción `-lfl` enlaza la biblioteca de soporte de Flex.
 
-    flex reconocedor.l
-    gcc lex.yy.c -lfl
+El proceso general es:
 
-### Ejercicio 08
+    Archivo .l → Flex → lex.yy.c → GCC → a.out
 
-    flex ocho.l
-    gcc lex.yy.c -lfl
+Los comandos deben ejecutarse desde el directorio donde se encuentra el archivo fuente. Cada nueva generación y compilación puede reemplazar los archivos `lex.yy.c` y `a.out` anteriores.
 
-La opción `-lfl` enlaza la biblioteca de soporte de Flex.
+## Relación con los compiladores
 
-## Ejecución
+El análisis léxico permite reconocer los componentes básicos de un lenguaje. A partir de los caracteres, el analizador identifica lexemas y los clasifica en categorías, como identificadores, palabras reservadas, números y operadores.
 
-### Entrada interactiva
+Estos ejercicios permiten practicar esa etapa mediante tareas concretas de reconocimiento, clasificación y transformación, como preparación para el estudio del análisis sintáctico.
 
-    ./a.out
+## Material de referencia
 
-Escribir el texto directamente en la terminal. Para finalizar en Ubuntu, presionar **Ctrl+D en una línea vacía**.
-
-El ejercicio 06 muestra los totales al terminar la entrada. Los ejercicios 07 y 08 imprimen los elementos conforme los reconocen.
-
-### Entrada y salida mediante archivos
-
-    ./a.out < entrada.txt > salida.txt
-    cat salida.txt
-
-El programa procesa el contenido de `entrada.txt` y guarda sus resultados en `salida.txt`. La redirección `>` reemplaza el contenido anterior del archivo de salida.
-
----
-
-## Ejemplos de prueba
-
-### Ejercicio 06
-
-    Hola MUNDO 123
-    Compiladores y Lenguajes 2026
-    Simbolos: @ # !
-
-Los saltos de línea también se contabilizan como espacios en blanco.
-
-### Ejercicio 07
-
-    int edad 25
-    if else while
-    contador2 _total 100
-
-Cada elemento reconocido se imprime acompañado de su categoría.
-
-### Ejercicio 08
-
-    a + b - c * d / e
-    a < b
-    a <= b
-    a > b
-    a >= b
-    a == b
-    a != b
-
-Se muestran únicamente los operadores reconocidos.
-
-## Relación con el análisis léxico
-
-La clasificación de caracteres permite distinguir letras, dígitos y separadores. Mediante patrones, el analizador agrupa caracteres en lexemas y les asigna una categoría de token.
-
-Por ejemplo, en `int edad`, el lexema `int` corresponde a una palabra reservada y `edad` a un identificador. En los analizadores desarrollados, la variable `yytext` contiene el lexema reconocido por Flex.
+- Diapositivas de la Semana 4: estructura de programas Lex y prácticas con Lex/Flex y GCC.
+- Diapositivas de la Semana 6: ejercicios propuestos de analizadores léxicos.
+- Apuntes y ejemplos desarrollados en clase.
 
 ---
