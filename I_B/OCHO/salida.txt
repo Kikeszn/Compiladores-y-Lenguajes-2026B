@@ -1,0 +1,10 @@
+ARITMETICO - Suma: +
+ARITMETICO - Resta: -
+ARITMETICO - Multiplicacion: *
+ARITMETICO - Division: /
+RELACIONAL - Menor que: <
+RELACIONAL - Menor o igual: <=
+RELACIONAL - Mayor que: >
+RELACIONAL - Mayor o igual: >=
+RELACIONAL - Igualdad: ==
+RELACIONAL - Desigualdad: !=
