@@ -1,0 +1,6 @@
+Invalida: a101
+Valida: 100101 -> Decimal: 37
+Valida: 1111 -> Decimal: 15
+Invalida: 111021
+Invalida: 123
+Invalida: 110ae
