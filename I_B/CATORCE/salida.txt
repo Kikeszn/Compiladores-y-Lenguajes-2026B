@@ -27,4 +27,10 @@
   Separador: ,
   Error: la lista no puede acabar en coma
 ----------------------------------------
+  Entero: 67
+  Separador: ,
+  Error: token no valido '$3'
+  Separador: ,
+  Error: token no valido '"hola"'
+----------------------------------------
 ========================================
