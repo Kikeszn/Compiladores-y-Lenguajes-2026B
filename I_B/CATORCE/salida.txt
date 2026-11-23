@@ -1,0 +1,30 @@
+========== ANALISIS DE LISTAS ==========
+  Identificador: x
+  Separador: ,
+  Entero: 25
+  Separador: ,
+  Identificador: suma_1
+----------------------------------------
+  Identificador: a
+  Separador: ,
+  Entero: 10
+  Separador: ,
+  Identificador: b
+  Separador: ,
+  Error: la lista no puede acabar en coma
+----------------------------------------
+  Error: token no valido '12abc'
+  Separador: ,
+  Error: token no valido '3.5'
+  Separador: ,
+  Identificador: _temp
+----------------------------------------
+  Entero: 1
+  Separador: ,
+  Entero: 2
+  Separador: ,
+  Entero: 3
+  Separador: ,
+  Error: la lista no puede acabar en coma
+----------------------------------------
+========================================
